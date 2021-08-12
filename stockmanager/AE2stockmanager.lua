@@ -25,7 +25,11 @@ while true do
             name = curName,
             damage = curDamage
             })
-
+        
+        if storedItem == nil then
+            storedItem = 
+        end
+        
         -- Write status of item
         gpu.setForeground(0xCC24C0) -- Purple-ish
         io.write("\n" .. storedItem[1].size)
