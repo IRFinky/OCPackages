@@ -34,14 +34,14 @@ while true do
         
         -- Write status of item
         gpu.setForeground(0xCC24C0) -- Purple-ish
-        io.write("\n" .. storedItem[1].size)
+        io.write("\n" .. math.floor(storedItem[1].size))
         gpu.setForeground(0x00FF00) -- Green
         io.write(" " .. storedItem[1].label)
         gpu.setForeground(0xFFFFFF) -- White
 
         -- We need to craft some of this item
         if storedItem[1].size < curMinValue then
-            delta = curMinValue - storedItem[1].size
+            delta = curMinValue - math.floor(storedItem[1].size)
             craftAmount = delta
             if delta > curMaxRequest then
                 craftAmount = curMaxRequest
@@ -89,14 +89,14 @@ while true do
     if needOres == true then
       -- We crafted stuff.  Turn off redstone and set a short delay
       if redstoneControl ~= nil then
-        io.write("Setting redstone controller to 0.\n")
+        io.write("\nSetting redstone controller to 0.")
         redstoneControl.setOutput(redstoneControlSide,0)
       end
       loopDelay = minDelay
     else
       -- We didn't.  Wait longer.
       if redstoneControl ~= nil then
-        io.write("Setting redstone controller to 15..\n")
+        io.write("\nSetting redstone controller to 15..")
         redstoneControl.setOutput(redstoneControlSide,15)
       end
       loopDelay = maxDelay
@@ -108,17 +108,17 @@ while true do
       for curIdx = 1, #results do
         curCraft = results[curIdx]
         if curCraft.isCanceled() or curCraft.isDone() then
-          io.write("A craft was completed.\n")
+          io.write("\nA craft was completed.")
           table.remove(results,curIdx)
           break
         else
           -- A short delay if we are waiting for crafts to finish
-          io.write("A craft is pending, sleeping for 5 seconds...\n")
+          io.write("\nA craft is pending, sleeping for 5 seconds...")
           os.sleep(5)
         end
       end
     end
 
-    io.write("Sleeping for " .. loopDelay .. " seconds...\n\n")
+    io.write("\nSleeping for " .. loopDelay .. " seconds...\n\n")
     os.sleep(loopDelay)
 end
