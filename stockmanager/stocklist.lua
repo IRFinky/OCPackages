@@ -9,6 +9,8 @@ redstoneControlSide = nil --sides.up
 -- Damage value should be zero for base items
 
 items = {
+    { "minecraft:sand"      0, 16384, 1024},
+    { "minecraft:redstone_block",        0, 1024, 256 },
     { "minecraft:iron_ingot",       0, 16384, 1024 },
     { "minecraft:gold_ingot",       0, 16384, 1024 },
     { "minecraft:glass",      0, 16384, 1024 },
@@ -40,6 +42,10 @@ items = {
     { "appliedenergistics2:material",       1, 4096, 256 }, -- Charged Certus Quartz Crystal
     { "appliedenergistics2:material",       8, 4096, 256 }, -- Fluix Dust
     { "appliedenergistics2:material",       2, 4096, 256 }, -- Certus Quartz Dust
+    { "appliedenergistics2:material",      44, 1024, 256 }, --Annihilation Core
+    { "appliedenergistics2:material",      43, 1024, 256 }, --Formation Core
+    { "appliedenergistics2:interface",      0, 256, 64 }, --ME Interface
+    { "appliedenergistics2:part",       440, 256, 64 }, --ME Interface part
     { "appliedenergistics2:item.ItemMultiMaterial",       52, 32, 32 }, -- Blank Pattern
     { "appliedenergistics2:item.ItemMultiPart",       16, 128, 32 }, -- Glass Cable - Fluix
     { "actuallyadditions:item_dust",       5, 4096, 256 }, -- Crushed Quartz
@@ -50,7 +56,11 @@ items = {
     { "enderio:item_alloy_ingot",       6, 1024, 256 }, -- Dark Steel Ingot
     { "enderio:item_alloy_ingot",       7, 1024, 256 }, -- Soularium Ingot
     { "enderio:item_alloy_ingot",       8, 1024, 256 }, -- End Steel Ingot
-    { "enderio:item_alloy_ingot",       0, 1024, 256 } -- Electrical Steel Ingot
+    { "enderio:item_alloy_ingot",       0, 1024, 256 }, -- Electrical Steel Ingot
+    { "mysticalagriculture:crafting",       1, 1024,256}, --Prudentium Essence
+    { "mysticalagriculture:crafting",       2, 1024,256}, --Intermedium Essence
+    { "mysticalagriculture:crafting",       3, 1024,256}, --Superium Essence
+    { "mysticalagriculture:crafting",       4, 1024,256}, --Supremium Essence
 }
 
 minDelay = 30    -- Seconds between runs if something was crafted
