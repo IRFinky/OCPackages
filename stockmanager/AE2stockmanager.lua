@@ -21,7 +21,7 @@ while true do
         curMaxRequest = items[curIdx][4]
 
         -- io.write("Checking for " .. curMinValue .. " of " .. curName .. "\n")
-        storedItem = meController.getItemsInNetwork({
+        storedItem = AE2Adapter.getItemsInNetwork({
             name = curName,
             damage = curDamage
             })
@@ -55,7 +55,7 @@ while true do
             gpu.setForeground(0xFFFFFF) -- White
 
             -- Retrieve a craftable recipe for this item
-            craftables = meController.getCraftables({
+            craftables = AE2Adapter.getCraftables({
                 name = curName,
                 damage = curDamage
                 })
