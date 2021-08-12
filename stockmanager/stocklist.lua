@@ -32,13 +32,9 @@ items = {
     { "appliedenergistics2:material",       23, 4096, 256 }, -- Calculation Processor
     { "appliedenergistics2:material",       22, 4096, 256 }, -- Logic Processor
     { "appliedenergistics2:material",       11, 4096, 256 }, -- Pure Nether Quartz Crystal
-    { "appliedenergistics2:material",       10, 4096, 256 }, -- Pure Certus Quartz Crystal
     { "appliedenergistics2:material",       7, 4096, 256 }, -- Fluix Crystal
     { "appliedenergistics2:material",       12, 4096, 256 }, -- Pure Fluix Crystal
-    { "appliedenergistics2:material",       0, 4096, 256 }, -- Certus Quartz Crystal
-    { "appliedenergistics2:material",       1, 4096, 256 }, -- Charged Certus Quartz Crystal
     { "appliedenergistics2:material",       8, 4096, 256 }, -- Fluix Dust
-    { "appliedenergistics2:material",       2, 4096, 256 }, -- Certus Quartz Dust
     { "appliedenergistics2:material",      44, 1024, 256 }, --Annihilation Core
     { "appliedenergistics2:material",      43, 1024, 256 }, --Formation Core
     { "appliedenergistics2:interface",      0, 256, 64 }, --ME Interface
