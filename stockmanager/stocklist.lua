@@ -1,10 +1,8 @@
 local component = require("component")
 
 -- Set these to the relevant components or nil if missing
-if component.me_interface == nil then
-    AE2Adapter = nil
-else
-    AE2Adapter = component.proxy(component.me_interface.address)
+for address, name in component.list("me_interface", true) do
+  AE2Adapter = component.proxy(address)
 end
 redstoneControl = nil --component.proxy(component.redstone.address)
 redstoneControlSide = nil --sides.up
