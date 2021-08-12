@@ -9,7 +9,7 @@ redstoneControlSide = nil --sides.up
 -- Damage value should be zero for base items
 
 items = {
-    { "minecraft:sand"      0, 16384, 1024},
+    { "minecraft:sand",      0, 16384, 1024},
     { "minecraft:redstone_block",        0, 1024, 256 },
     { "minecraft:iron_ingot",       0, 16384, 1024 },
     { "minecraft:gold_ingot",       0, 16384, 1024 },
