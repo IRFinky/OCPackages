@@ -28,7 +28,6 @@ items = {
     { "thermalfoundation:material",       167, 16384, 1024 }, -- Enderium Ingot
     { "tconstruct:ingots",                   0, 16384, 1024 }, -- Cobalt Ingot
     { "tconstruct:ingots",                   1, 16384, 1024 }, -- Ardite Ingot
-    { "draconicevolution:draconium_ingot",      0, 16384, 1024 },
     { "appliedenergistics2:material",       24, 4096, 256 }, -- Engineering Processor
     { "appliedenergistics2:material",       23, 4096, 256 }, -- Calculation Processor
     { "appliedenergistics2:material",       22, 4096, 256 }, -- Logic Processor
