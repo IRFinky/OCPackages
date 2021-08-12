@@ -26,9 +26,8 @@ while true do
             damage = curDamage
             })
         
-        if storedItem == nil then
+        if storedItem.n < 1 then
             storedItem = {
-                            {"zero object"},
                             {size = 0, label = curName .. ":" .. curDamage}
                          }
         end
