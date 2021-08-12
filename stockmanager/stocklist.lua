@@ -60,7 +60,7 @@ items = {
     { "mysticalagriculture:crafting",       1, 1024,256}, --Prudentium Essence
     { "mysticalagriculture:crafting",       2, 1024,256}, --Intermedium Essence
     { "mysticalagriculture:crafting",       3, 1024,256}, --Superium Essence
-    { "mysticalagriculture:crafting",       4, 1024,256}, --Supremium Essence
+    { "mysticalagriculture:crafting",       4, 1024,256} --Supremium Essence
 }
 
 minDelay = 30    -- Seconds between runs if something was crafted
