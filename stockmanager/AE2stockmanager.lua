@@ -7,7 +7,7 @@ local gpu = component.gpu
 -- Import the stocklist
 require("stocklist")
 
-if AE2Adapter = nil then
+if AE2Adapter == nil then
     do return end
 end
 
