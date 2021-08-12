@@ -28,7 +28,7 @@ while true do
 
         -- Write status of item
         gpu.setForeground(0xCC24C0) -- Purple-ish
-        io.write(storedItem[1].size)
+        io.write("\n" .. storedItem[1].size)
         gpu.setForeground(0x00FF00) -- Green
         io.write(" " .. storedItem[1].label)
         gpu.setForeground(0xFFFFFF) -- White
@@ -42,7 +42,7 @@ while true do
             end
 
             -- Write out status message
-            io.write(" need ")
+            io.write(", need ")
             gpu.setForeground(0xFF0000) -- Red
             io.write(delta)
             gpu.setForeground(0xFFFFFF) -- White
@@ -59,19 +59,22 @@ while true do
             if craftables.n >= 1 then
                 -- Request some of these items
                 cItem = craftables[1]
-                retval = cItem.request(craftAmount)
-                io.write("\nretval from request" .. retval)
                 gpu.setForeground(0x00FF00) -- Green
-                io.write(" CraftableFound\n")
+                io.write(" Craftable Found")
+                retval = cItem.request(craftAmount)
+                if retval ~= nil then
+                    -- Flag that we made something, so turn back on the inputs
+                    table.insert(results,retval)
+                    needOres = true
+                else
+                    gpu.setForeground(0xFF0000) -- Red
+                    io.write(" but unable to request")
+                end
                 gpu.setForeground(0xFFFFFF) -- White
-
-                -- Flag that we made something, so turn back on the inputs
-               table.insert(results,retval)
-               needOres = true
             else
                 -- Could not find a craftable for this item
                 gpu.setForeground(0xFF0000) -- Red
-                io.write("    Unable to locate craftable for " .. storedItem[1].name .. "\n")
+                io.write(" No Craftable Found")
                 gpu.setForeground(0xFFFFFF) -- White
             end
         end
