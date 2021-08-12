@@ -24,7 +24,6 @@ items = {
     { "thermalfoundation:material",       161, 16384, 1024 }, -- Electrum Ingot
     { "thermalfoundation:material",       162, 16384, 1024 }, -- Invar Ingot
     { "thermalfoundation:material",       163, 16384, 1024 }, -- Bronze Ingot
-    { "thermalfoundation:material",       164, 16384, 1024 }, -- Constantan Ingot
     { "thermalfoundation:material",       165, 16384, 1024 }, -- Signalum Ingot
     { "thermalfoundation:material",       166, 16384, 1024 }, -- Lumium Ingot
     { "thermalfoundation:material",       167, 16384, 1024 }, -- Enderium Ingot
@@ -49,14 +48,6 @@ items = {
     { "appliedenergistics2:item.ItemMultiMaterial",       52, 32, 32 }, -- Blank Pattern
     { "appliedenergistics2:item.ItemMultiPart",       16, 128, 32 }, -- Glass Cable - Fluix
     { "actuallyadditions:item_dust",       5, 4096, 256 }, -- Crushed Quartz
-    { "enderio:item_material",       5, 4096, 256 }, -- Silicon
-    { "enderio:item_alloy_ingot",       1, 1024, 256 }, -- Energetic Alloy Ingot
-    { "enderio:item_alloy_ingot",       2, 1024, 256 }, -- Vibrant Alloy Ingot
-    { "enderio:item_alloy_ingot",       5, 1024, 256 }, -- Pulsating Iron Ingot
-    { "enderio:item_alloy_ingot",       6, 1024, 256 }, -- Dark Steel Ingot
-    { "enderio:item_alloy_ingot",       7, 1024, 256 }, -- Soularium Ingot
-    { "enderio:item_alloy_ingot",       8, 1024, 256 }, -- End Steel Ingot
-    { "enderio:item_alloy_ingot",       0, 1024, 256 }, -- Electrical Steel Ingot
     { "mysticalagriculture:crafting",       1, 1024,256}, --Prudentium Essence
     { "mysticalagriculture:crafting",       2, 1024,256}, --Intermedium Essence
     { "mysticalagriculture:crafting",       3, 1024,256}, --Superium Essence
