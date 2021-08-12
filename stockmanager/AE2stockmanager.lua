@@ -27,7 +27,8 @@ while true do
             })
         
         if storedItem == nil then
-            storedItem = 
+            storedItem = {
+                {size = 0, label = curName .. ":" .. curDamage}
         end
         
         -- Write status of item
