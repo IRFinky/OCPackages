@@ -8,6 +8,8 @@ local gpu = component.gpu
 require("stocklist")
 
 if AE2Adapter == nil then
+    gpu.setForeground(0xFF0000) -- Red
+    io.write("\nNo Adapter Found\n")
     do return end
 end
 
