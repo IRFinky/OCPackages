@@ -1,7 +1,7 @@
 local component = require("component")
 
 -- Set these to the relevant components or nil if missing
-if component.me_interface = nil then
+if component.me_interface == nil then
     AE2Adapter = nil
 else
     AE2Adapter = component.proxy(component.me_interface.address)
