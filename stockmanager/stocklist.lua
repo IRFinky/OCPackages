@@ -1,7 +1,7 @@
 local component = require("component")
 
 -- Set these to the relevant components or nil if missing
-meController = component.proxy(component.me_controller.address)
+AE2Adapter = component.proxy(component.me_interface.address)
 redstoneControl = nil --component.proxy(component.redstone.address)
 redstoneControlSide = nil --sides.up
 
