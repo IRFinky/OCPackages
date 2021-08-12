@@ -7,6 +7,10 @@ local gpu = component.gpu
 -- Import the stocklist
 require("stocklist")
 
+if AE2Adapter = nil then
+    do return end
+end
+
 results = {}     -- Array that holds currently pending crafts
 
 while true do
