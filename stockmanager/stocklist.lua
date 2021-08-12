@@ -25,7 +25,6 @@ items = {
     { "thermalfoundation:material",       162, 16384, 1024 }, -- Invar Ingot
     { "thermalfoundation:material",       163, 16384, 1024 }, -- Bronze Ingot
     { "thermalfoundation:material",       165, 16384, 1024 }, -- Signalum Ingot
-    { "thermalfoundation:material",       166, 16384, 1024 }, -- Lumium Ingot
     { "thermalfoundation:material",       167, 16384, 1024 }, -- Enderium Ingot
     { "tconstruct:ingots",                   0, 16384, 1024 }, -- Cobalt Ingot
     { "tconstruct:ingots",                   1, 16384, 1024 }, -- Ardite Ingot
