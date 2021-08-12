@@ -27,13 +27,10 @@ while true do
             })
 
         -- Write status of item
-        io.write("Network contains ")
         gpu.setForeground(0xCC24C0) -- Purple-ish
         io.write(storedItem[1].size)
-        gpu.setForeground(0xFFFFFF) -- White
-        io.write(" items with label ")
         gpu.setForeground(0x00FF00) -- Green
-        io.write(storedItem[1].label .. "\n")
+        io.write(" " .. storedItem[1].label)
         gpu.setForeground(0xFFFFFF) -- White
 
         -- We need to craft some of this item
@@ -45,13 +42,13 @@ while true do
             end
 
             -- Write out status message
-            io.write("  Need to craft ")
+            io.write(" need ")
             gpu.setForeground(0xFF0000) -- Red
             io.write(delta)
             gpu.setForeground(0xFFFFFF) -- White
             io.write(", requesting ")
             gpu.setForeground(0xCC24C0) -- Purple-ish
-            io.write(craftAmount .. "... ")
+            io.write(craftAmount .. "...")
             gpu.setForeground(0xFFFFFF) -- White
 
             -- Retrieve a craftable recipe for this item
@@ -63,8 +60,9 @@ while true do
                 -- Request some of these items
                 cItem = craftables[1]
                 retval = cItem.request(craftAmount)
+                io.write("\nretval from request" .. retval)
                 gpu.setForeground(0x00FF00) -- Green
-                io.write("OK\n")
+                io.write(" CraftableFound\n")
                 gpu.setForeground(0xFFFFFF) -- White
 
                 -- Flag that we made something, so turn back on the inputs
