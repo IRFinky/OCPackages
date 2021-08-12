@@ -28,6 +28,7 @@ while true do
         
         if storedItem == nil then
             storedItem = {
+                            {"zero object"},
                             {size = 0, label = curName .. ":" .. curDamage}
                          }
         end
